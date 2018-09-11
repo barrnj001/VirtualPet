@@ -8,6 +8,7 @@ public class VirtualPetApp {
 
 	public static void main(String[] args) {
 		System.out.println("Please pick a name for your cat.");
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		String Name = scanner.nextLine();
 
