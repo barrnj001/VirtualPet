@@ -23,17 +23,7 @@ public class VirtualPet {
 	public Integer getPotty() {
 		return litterBox;
 	}
-
-	private Integer status = hunger + litterBox + restless;
 	
-
-	public Integer getStatus() {
-		return status;
-	}
-
-	public VirtualPet(int startingAmount) {
-		status = startingAmount;
-	}
 
 	public void feedPet(int petFood) {
 		hunger = hunger - petFood;

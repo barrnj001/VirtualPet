@@ -13,22 +13,21 @@ public class VirtualPetApp {
 
 		System.out.println("That is a very nice name! Here's how " + Name + " is doing.");
 
-		VirtualPet catHunger = new VirtualPet(0);
+		VirtualPet catHunger = new VirtualPet();
 		int hungerBefore = catHunger.getHunger();
 
-		VirtualPet catBladder = new VirtualPet(0);
+		VirtualPet catBladder = new VirtualPet();
 		int bladderBefore = catBladder.getPotty();
 
-		VirtualPet catRestless = new VirtualPet(0);
+		VirtualPet catRestless = new VirtualPet();
 		Integer restlessBefore = catRestless.getRestless();
 
-		VirtualPet catSleep = new VirtualPet(0);
+		VirtualPet catSleep = new VirtualPet();
 		Integer sleepBefore = catSleep.getSleep();
-
-		VirtualPet cat = new VirtualPet(0);
 
 		String userInput = "";
 		while (!userInput.equals("5")) {
+			
 			HashMap<String, Integer> catStats = new HashMap<String, Integer>();
 			catStats.put("1. Hunger", hungerBefore);
 			catStats.put("2. Litterbox", bladderBefore);
